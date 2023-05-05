@@ -1,0 +1,11 @@
+.line{
+    background-color: #6592e6;
+    text-align: center;
+    height: 2px;
+    margin: 0 auto;
+}
+
+#about p {
+    font-size: 1.5rem;
+    text-align: center;
+}

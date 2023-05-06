@@ -1,3 +1,58 @@
+/* Fonts */
+:root {
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Roboto", sans-serif;
+    --font-secondary: "Work Sans", sans-serif;
+  }
+  
+  /* Colors */
+  :root {
+    --color-default: #364d59;
+    --color-primary: #0d6efd;
+    --color-secondary: #52565e;
+  }
+  
+  /* Smooth scroll behavior */
+  :root {
+    scroll-behavior: smooth;
+  }
+
+  /*--------------------------------------------------------------
+# Titles 
+--------------------------------------------------------------*/
+
+  .content {
+    padding: 30px 0;
+  }
+  
+  .content h3 {
+    font-size: 36px;
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    position: relative;
+  }
+  
+  .content h3:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--color-primary);
+    left: 0;
+    bottom: 0;
+  }
+  
+  .content p {
+    font-size: 18px;
+  }
+
+  /*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
 .line{
     background-color: #6592e6;
     text-align: center;
@@ -8,4 +63,228 @@
 #about p {
     font-size: 1.5rem;
     text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.features .nav-tabs {
+    border: 0;
+  }
+  
+  .features .nav-link {
+    padding: 15px 0;
+    transition: 0.3s;
+    color: var(--color-secondary);
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 100%;
+    border: 0;
+    border-bottom: 4px solid #e2e4e6;
+  }
+  
+  .features .nav-link i {
+    padding-right: 15px;
+    font-size: 48px;
+  }
+  
+  .features .nav-link h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  @media (max-width: 575px) {
+    .features .nav-link h4 {
+      font-size: 16px;
+    }
+  }
+  
+  .features .nav-link:hover {
+    color: var(--color-primary);
+  }
+  
+  .features .nav-link.active {
+    color: var(--color-primary);
+    background-color: transparent;
+    border-color: var(--color-primary);
+  }
+  
+  .features .tab-content {
+    margin-top: 30px;
+  }
+  
+  .features .tab-pane h3 {
+    font-weight: 700;
+    font-size: 32px;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .features .tab-pane h3:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--color-primary);
+    left: 0;
+    bottom: 0;
+  }
+  
+  .features .tab-pane ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features .tab-pane ul li {
+    padding-top: 10px;
+  }
+  
+  .features .tab-pane ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: var(--color-primary);
+  }
+  
+  .features .tab-pane p:last-child {
+    margin-bottom: 0;
+  }
+
+  /*--------------------------------------------------------------
+# Prices Section
+--------------------------------------------------------------*/
+
+.price {
+  font-size: 2rem;
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.get-started {
+  margin: 3rem;
+}
+
+.get-started .php-email-form {
+  background: #fff;
+  padding: 30px;
+  height: 100%;
+}
+
+@media (max-width: 575px) {
+  .get-started .php-email-form {
+    padding: 20px;
+  }
+}
+
+.get-started .php-email-form h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.get-started .php-email-form p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.get-started .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #df1529;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.get-started .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.get-started .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.get-started .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #059652;
+  border-top-color: #fff;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.get-started .php-email-form input,
+.get-started .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.get-started .php-email-form input:focus,
+.get-started .php-email-form textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.get-started .php-email-form input {
+  padding: 12px 15px;
+}
+
+.get-started .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.get-started .php-email-form button[type=submit] {
+  background: var(--color-primary);
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.get-started .php-email-form button[type=submit]:hover {
+  background: rgba(254, 185, 0, 0.8);
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

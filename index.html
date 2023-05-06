@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Navbar Section -->
     <section>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid d-flex justify-content-around">
@@ -33,12 +34,18 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
+                  <a class="nav-link" href="#about">Nosotros</a>
+                </li>
+                <li class="nav-item">
                   <a
                     class="nav-link active"
                     aria-current="page"
                     href="#services"
                     >Servicios</a
                   >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#clients">Clientes</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#prices">Precios</a>
@@ -55,7 +62,9 @@
         </div>
       </nav>
     </section>
+    <!-- End Navbar Section -->
 
+    <!-- Home Section -->
     <section>
       <div class="container my-5">
         <div class="row justify-content-center align-items-center">
@@ -76,362 +85,448 @@
         </div>
       </div>
     </section>
+    <!-- End Home Section -->
 
+    <!-- About Section -->
     <section id="about">
       <div class="container my-4">
         <div class="row justify-content-center">
           <div class="col-md-12 col-lg-10">
             <hr class="line" />
             <p class="my-4 display-5">
-              Somos una Agencia Digital con más de 8 años de experiencia.
-              Ofrecemos soluciones en Marketing Digital, nuestras
-              especialidades: Sistemas, Webs y Social Media.
+              Somos una empresa especializada en servicios digitales y estamos
+              aquí para ayudarlo a llevar su negocio al siguiente nivel. Nuestra
+              agencia ofrece una amplia gama de servicios digitales diseñados
+              para aumentar su presencia en línea y mejorar su estrategia
+              comercial.
+              <br />
+              <br />
+              En nuestra agencia digital, contamos con un equipo altamente
+              capacitado de diseñadores, desarrolladores, especialistas en
+              marketing digital y expertos en análisis de datos que trabajan
+              juntos para ofrecer los mejores resultados para nuestros clientes.
             </p>
             <hr class="line" />
           </div>
         </div>
       </div>
     </section>
+    <!-- End About Section -->
 
-    <section id="services">
+    <!-- Services Section -->
+    <section id="services" class="features section-bg">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-9">
-            <h3 class="align-center mb-0 display-2">
-              <strong>Servicios</strong>
-            </h3>
+        <div class="col-12 col-lg-9">
+          <div class="content">
+            <div class="title col-md-12 col-lg-10">
+              <h3 class="align-center mb-4 display-2">
+                <strong>Servicios</strong>
+              </h3>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <!-- Card service item -->
-          <div class="card col-12 col-md-6 col-lg-3 m-3">
-            <div class="card-wrapper m-3">
-              <div class="card-box align-center">
-                <h5 class="card-title display-7">
-                  <strong>Social Media Management</strong>
-                </h5>
-                <p class="card-text display-7">
-                  Posicionamos y cuidamos tu marca en Redes Sociales. Analizamos
-                  y creamos las mejores estrategias para llegar a tus clientes.
+        <ul class="nav nav-tabs row g-2 d-flex">
+          <li class="nav-item col-2">
+            <a
+              class="nav-link active show"
+              data-bs-toggle="tab"
+              data-bs-target="#tab-1"
+            >
+              <h4>Diseño web</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+
+          <li class="nav-item col-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <h4>Marketing digital</h4> </a
+            ><!-- End tab nav item -->
+          </li>
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <h4>Desarrollo de Aplicaciones</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+
+          <li class="nav-item col-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <h4>Redes Sociales</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <h4>Análisis y seguimiento</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div
+                class="col-lg-6 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <h3>Diseño web y desarrollo</h3>
+                <p class="fst-italic">
+                  Creamos sitios web personalizados y profesionales, que se
+                  adaptan a las necesidades de su negocio y a las últimas
+                  tendencias en diseño web.
                 </p>
+              </div>
+              <div
+                class="col-lg-6 order-1 order-lg-2 text-center"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <img src="assets/images/cover-1.png" alt="" class="img-fluid" />
               </div>
             </div>
           </div>
-          <!-- Card service item -->
-          <div class="card col-12 col-md-6 col-lg-3 m-3">
-            <div class="card-wrapper m-3">
-              <div class="card-box align-center">
-                <h5 class="card-title display-7">
-                  <strong>Web Design &amp; Development</strong>
-                </h5>
-                <p class="card-text display-7">
-                  Más de 10 años de experiencia en el desarrollo de Sitios Webs.
-                  Una mezcla de buen diseño y la real experiencia para tus
-                  usuarios.
+          <!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div
+                class="col-lg-6 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+              >
+                <h3>Marketing digital</h3>
+                <p class="fst-italic">
+                  Ayudamos a su empresa a crear una estrategia de marketing
+                  digital completa, desde la publicidad en redes sociales hasta
+                  la optimización de motores de búsqueda (SEO) y el email
+                  marketing.
                 </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/images/cover-1.png" alt="" class="img-fluid" />
               </div>
             </div>
           </div>
-          <!-- Card service item -->
-          <div class="card col-12 col-md-6 col-lg-3 m-3">
-            <div class="card-wrapper m-3">
-              <div class="card-box align-center">
-                <h5 class="card-title display-7">
-                  <strong>Systems Development</strong>
-                </h5>
-                <p class="card-text display-7">
-                  Desarrollamos el Sistema que necesitas. Todo a medida de tu
-                  empresa. Trabajamos con Institutos, Restaurantes y Almacenes.
+          <!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div
+                class="col-lg-6 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+              >
+                <h3>Desarrollo de aplicaciones móviles</h3>
+                <p class="fst-italic">
+                  Diseñamos y desarrollamos aplicaciones móviles a medida para
+                  iOS y Android.
                 </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/images/cover-1.png" alt="" class="img-fluid" />
               </div>
             </div>
           </div>
+          <!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div
+                class="col-lg-6 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+              >
+                <h3>Gestión de redes sociales</h3>
+                <p class="fst-italic">
+                  Nos encargamos de administrar sus cuentas de redes sociales,
+                  creando contenido de calidad y aumentando su alcance en línea.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/images/cover-1.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div
+                class="col-lg-6 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+              >
+                <h3>Análisis y seguimiento</h3>
+                <p class="fst-italic">
+                  Utilizamos herramientas de análisis de datos para hacer un
+                  seguimiento del rendimiento de su sitio web y sus campañas de
+                  marketing, y le proporcionamos informes detallados para
+                  ayudarlo a mejorar su estrategia.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/images/cover-1.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <!-- End tab content item -->
         </div>
       </div>
     </section>
+    <!-- End Services Section -->
 
-    <section>
-      <div class="images-container container">
-        <h3 class="align-center mb-0 display-2">
-          <strong>Our Clients</strong>
-        </h3>
-        <div class="row justify-content-center mt-4">
-          <div class="col-md-3 card">
-            <img src="assets/images/cliente-1-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png" alt="" />
-          </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/cliente-4-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png" alt="" />
-          </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/cliente-5-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png" alt="" />
-          </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/cliente-6-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png" alt="" />
-          </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/cliente-8-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png" alt="" />
-          </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/cliente.2-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png" alt="" />
-          </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/cliente-1-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png" alt="" />
-          </div>
-          <div class="col-md-3 card">
-            <img src="assets/images/cliente-4-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="prices">
-      <div class="container">
-        <div class="title col-md-12 col-lg-10">
+    <!-- Client Section -->
+    <section id="clients">
+      <div class="images-container container mb-4">
+        <div class="content">
+          <div class="title col-md-12 col-lg-10">
             <h3 class="align-center mb-4 display-2">
-              <strong>Our Pricing Plan</strong>
+              <strong>Clientes</strong>
             </h3>
           </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-3">
+            <img
+              src="assets/images/cliente-1-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="assets/images/cliente-4-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="assets/images/cliente-5-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="assets/images/cliente-6-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="assets/images/cliente-8-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="assets/images/cliente.2-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="assets/images/cliente-1-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="assets/images/cliente-4-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Client Section -->
+
+    <!-- Prices Section -->
+    <section id="prices" class="prices">
+      <div class="container">
+        <div class="content">
+          <div class="title col-md-12 col-lg-10">
+            <h3 class="align-center mb-4 display-2">
+              <strong>Nuestros precios</strong>
+            </h3>
+          </div>
+        </div>
         <div class="row justify-content-center">
-            <!-- Price item -->
-          <div class="col-12 col-md-6 align-center col-lg-3">
+          <!-- Price item -->
+          <div class="col-lg-4 col-md- align-center col-lg-3">
             <div class="plan">
               <div class="plan-header">
                 <h6 class="plan-title mb-3 display-5">
-                  <strong>Monthly</strong>
+                  <strong>Sitio web</strong>
                 </h6>
                 <div class="plan-price">
-                  <p class="price m-0 display-2"><strong>$19</strong></p>
-                  <p class="price-term mb-3 display-7">
-                    <strong>Per month</strong>
+                  <p class="price m-0 display-2">
+                    <strong>$2000/desde</strong>
                   </p>
                 </div>
               </div>
               <div class="plan-body">
                 <div class="plan-list mb-4">
                   <ul class="list-group list-group-flush display-7">
-                    <li class="list-group-item">Market Analysis</li>
-                    <li class="list-group-item">Margin Trading</li>
-                    <li class="list-group-item">Stable Income</li>
+                    <li class="list-group-item">Incluye Hosting y Dominio</li>
+                    <li class="list-group-item">
+                      Call to Action - WhatsApp - RRSS
+                    </li>
+                    <li class="list-group-item">Formularios de Contacto</li>
                   </ul>
                 </div>
                 <div class="text-center">
-                  <a
-                    href="#contact"
-                    class="btn btn-primary"
-                    >Get started</a
+                  <a href="#contact" class="btn btn-primary"
+                    >Escribenos ahora</a
                   >
                 </div>
               </div>
             </div>
           </div>
           <!-- Price item -->
-          <div class="col-12 col-md-6 align-center col-lg-3">
+          <div class="col-lg-4 col-md-6 align-center col-lg-3">
             <div class="plan">
               <div class="plan-header">
-                <h6 class="plan-title mbr-fonts-style mb-3 display-5">
-                  <strong>Yearly</strong>
+                <h6 class="plan-title mb-3 display-5">
+                  <strong>Redes sociales</strong>
                 </h6>
                 <div class="plan-price">
-                  <p class="price mbr-fonts-style m-0 display-2">
-                    <strong>$119</strong>
-                  </p>
-                  <p class="price-term mbr-fonts-style mb-3 display-7">
-                    <strong>Per year</strong>
+                  <p class="price m-0 display-2">
+                    <strong>$600/desde</strong>
                   </p>
                 </div>
               </div>
               <div class="plan-body">
                 <div class="plan-list mb-4">
-                  <ul
-                    class="list-group mbr-fonts-style list-group-flush display-7"
-                  >
-                    <li class="list-group-item">Market Analysis</li>
-                    <li class="list-group-item">Margin Trading</li>
-                    <li class="list-group-item">Stable Income</li>
+                  <ul class="list-group list-group-flush display-7">
+                    <li class="list-group-item">
+                      Planificación y Estrategia Digital
+                    </li>
+                    <li class="list-group-item">
+                      Desde 12 Publicaciones al Mes
+                    </li>
+                    <li class="list-group-item">
+                      Gestión de Comentarios y DMs
+                    </li>
                   </ul>
                 </div>
                 <div class="text-center">
-                  <a
-                    href="#contact"
-                    class="btn btn-primary"
-                    >Get started</a
+                  <a href="#contact" class="btn btn-primary"
+                    >Escribenos ahora</a
                   >
                 </div>
               </div>
             </div>
           </div>
           <!-- Price item -->
-          <div class="col-12 col-md-6 align-center col-lg-3">
+          <div class="col-lg-4 col-md-6 align-center col-lg-3">
             <div class="plan">
               <div class="plan-header">
-                <h6 class="plan-title mbr-fonts-style mb-3 display-5">
-                  <strong>Lifetime</strong>
+                <h6 class="plan-title mb-3 display-5">
+                  <strong>Sistemas</strong>
                 </h6>
                 <div class="plan-price">
-                  <p class="price mbr-fonts-style m-0 display-2">
-                    <strong>$399</strong>
-                  </p>
-                  <p class="price-term mbr-fonts-style mb-3 display-7">
-                    <strong>One time</strong>
+                  <p class="price m-0 display-2">
+                    <strong>$2500/desde</strong>
                   </p>
                 </div>
               </div>
               <div class="plan-body">
                 <div class="plan-list mb-4">
-                  <ul
-                    class="list-group mbr-fonts-style list-group-flush display-7"
-                  >
-                    <li class="list-group-item">Market Analysis</li>
-                    <li class="list-group-item">Margin Trading</li>
-                    <li class="list-group-item">Stable Income</li>
+                  <ul class="list-group list-group-flush display-7">
+                    <li class="list-group-item">Sistemas de Biblioteca</li>
+                    <li class="list-group-item">Sistemas Ecommerce - Ventas</li>
+                    <li class="list-group-item">Sistemas de Administración</li>
                   </ul>
                 </div>
                 <div class="text-center">
-                  <a
-                    href="#contact"
-                    class="btn btn-primary"
-                    >Get started</a
+                  <a href="#contact" class="btn btn-primary"
+                    >Escribenos ahora</a
                   >
                 </div>
               </div>
             </div>
           </div>
           <!-- Price item -->
-          <div class="col-12 col-md-6 align-center col-lg-3">
-            <div class="plan">
-              <div class="plan-header">
-                <h6 class="plan-title mbr-fonts-style mb-3 display-5">
-                  <strong>Free</strong>
-                </h6>
-                <div class="plan-price">
-                  <p class="price mbr-fonts-style m-0 display-2">
-                    <strong>$0</strong>
-                  </p>
-                  <p class="price-term mbr-fonts-style mb-3 display-7">
-                    <strong>No payment</strong>
-                  </p>
-                </div>
-              </div>
-              <div class="plan-body">
-                <div class="plan-list mb-4">
-                  <ul
-                    class="list-group mbr-fonts-style list-group-flush display-7"
-                  >
-                    <li class="list-group-item">Market Analysis</li>
-                    <li class="list-group-item">Margin Trading</li>
-                    <li class="list-group-item">Stable Income</li>
-                  </ul>
-                </div>
-                <div class="text-center">
-                  <a
-                    href="#contact"
-                    class="btn btn-primary"
-                    >Get started</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
+    <!-- End Prices Section -->
 
-    <!-- <section data-bs-version="5.1" class="form7 cid-tDcJwVYsNF" id="form7-4">
+    <!-- Contact Section -->
+
+    <section id="contact" class="get-started section-bg">
       <div class="container">
-        <div class="mbr-section-head">
-          <h3
-            class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"
-          >
-            <strong>Get in Touch</strong>
-          </h3>
-        </div>
-        <div class="row justify-content-center mt-4">
-          <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
-            <form
-              action="https://mobirise.eu/"
-              method="POST"
-              class="mbr-form form-with-styler mx-auto"
-              data-form-title="Form Name"
-            >
-              <input
-                type="hidden"
-                name="email"
-                data-form-email="true"
-                value="CPqHW2MuaR6kHLRLA/7wisGJ0L6bNUGY0pe8pONzN1J9MAa3U9FjfDGlTV+zv8y2NfMEJEu+rIULN5R1/Jv1xrPJ9I8+dcKpifV+m/TXqTLPozM7fgPg9rcPTj69A/hp"
-              />
-              <p class="mbr-text mbr-fonts-style align-center mb-4 display-7">
-                One of our team will be in contact with you shortly.
-              </p>
-              <div class="row">
-                <div
-                  hidden="hidden"
-                  data-form-alert=""
-                  class="alert alert-success col-12"
-                >
-                  Thanks for filling out the form!
-                </div>
-                <div
-                  hidden="hidden"
-                  data-form-alert-danger=""
-                  class="alert alert-danger col-12"
-                >
-                  Oops...! some problem!
-                </div>
+        <div class="row justify-content-between gy-4">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <div class="content">
+              <div class="title col-md-12 col-lg-10">
+                <h3 class="align-center mb-4 display-2">
+                  <strong>Contactanos</strong>
+                </h3>
               </div>
-              <div class="dragArea row">
-                <div
-                  class="col-lg-12 col-md-12 col-sm-12 form-group mb-3"
-                  data-for="name"
-                >
+              <p>Dejanos tu mensaje y te contactaremos a la brevedad!</p>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="fade">
+            <form
+              action="assets/forms/form.php"
+              method="POST"
+              class="php-email-form"
+            >
+              <div class="row gy-3">
+                <div class="col-md-12">
                   <input
                     type="text"
                     name="name"
-                    placeholder="Name"
-                    data-form-field="name"
                     class="form-control"
-                    value=""
-                    id="name-form7-4"
+                    placeholder="Nombre"
+                    required
                   />
                 </div>
-                <div
-                  class="col-lg-12 col-md-12 col-sm-12 form-group mb-3"
-                  data-for="email"
-                >
+
+                <div class="col-md-12">
                   <input
                     type="email"
+                    class="form-control"
                     name="email"
                     placeholder="Email"
-                    data-form-field="email"
-                    class="form-control"
-                    value=""
-                    id="email-form7-4"
+                    required
                   />
                 </div>
-                <div
-                  data-for="phone"
-                  class="col-lg-12 col-md-12 col-sm-12 form-group mb-3"
-                >
+
+                <div class="col-md-12">
                   <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone"
-                    data-form-field="phone"
+                    type="text"
                     class="form-control"
-                    value=""
-                    id="phone-form7-4"
+                    name="phone"
+                    placeholder="Telefono"
+                    required
                   />
                 </div>
-                <div class="col-auto mbr-section-btn align-center">
-                  <button type="submit" class="btn btn-primary display-4">
-                    Submit
-                  </button>
+
+                <div class="col-md-12">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="6"
+                    placeholder="Mensaje"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Cargando</div>
+                  <div class="error-message" id="error-message">
+                    Tu mensaje no ha sido enviado. Intente nuevamente
+                  </div>
+                  <div class="sent-message" id="sent-message">
+                    Tu mensaje ha sido enviado con exito. Muchas gracias!
+                  </div>
+
+                  <button type="submit">Enviar</button>
                 </div>
               </div>
             </form>
           </div>
+          <!-- End Quote Form -->
         </div>
       </div>
-    </section> -->
+    </section>
+    <!-- End Get Started Section -->
 
     <!-- <section
       data-bs-version="5.1"
@@ -540,11 +635,11 @@
         >HTML Website Generator</a
       >
     </section> -->
+
+    <!-- Script Files -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/smoothscroll/smooth-scroll.js"></script>
-    <script src="assets/ytplayer/index.js"></script>
-    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-    <script src="assets/theme/js/script.js"></script>
-    <script src="assets/formoid/formoid.min.js"></script>
+    <script src="assets/forms/validate.js"></script>
+    <!-- End script files -->
+    
   </body>
 </html>

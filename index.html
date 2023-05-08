@@ -11,15 +11,15 @@
       rel="stylesheet"
       href="assets/bootstrap/css/bootstrap-reboot.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <!-- Navbar Section -->
-    <section>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid d-flex justify-content-around">
           <a class="navbar-brand" href="#">Real Marketing</a>
-          <div>
+          <div class="navbar-items">
             <button
               class="navbar-toggler"
               type="button"
@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">Nosotros</a>
+                  <a class="nav-link active" href="#about">Nosotros</a>
                 </li>
                 <li class="nav-item">
                   <a
@@ -45,13 +45,10 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#clients">Clientes</a>
+                  <a class="nav-link active" href="#prices">Precios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#prices">Precios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contacto</a>
+                  <a class="nav-link active" href="#contact">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -65,14 +62,18 @@
     <!-- End Navbar Section -->
 
     <!-- Home Section -->
-    <section>
+    <section id="home">
       <div class="container my-5">
         <div class="row justify-content-center align-items-center">
           <div class="col-12 col-md">
             <div class="text-wrapper">
-              <h1 class="mb-3 display-1">
-                <strong>Soluciones magicas en la era digital</strong>
-              </h1>
+              <h2 class="mb-3 display-1">
+                Soluciones
+                <span
+                  class="typed"
+                ></span>
+                en la era digital
+              </h2>
               <p class="display-7"></p>
               <div class="mt-3">
                 <a class="btn btn-secondary" href="#contact">Comencemos</a>
@@ -126,7 +127,7 @@
           </div>
         </div>
         <ul class="nav nav-tabs row g-2 d-flex">
-          <li class="nav-item col-lg-2 col-sm-12">
+          <li class="nav-item col-lg-4 col-sm-12">
             <a
               class="nav-link active show"
               data-bs-toggle="tab"
@@ -137,27 +138,14 @@
           </li>
           <!-- End tab nav item -->
 
-          <li class="nav-item col-lg-2 col-sm-12">
+          <li class="nav-item col-lg-4 col-sm-12">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-              <h4>Marketing digital</h4> </a
-            ><!-- End tab nav item -->
-          </li>
-
-          <li class="nav-item col-lg-3 col-sm-12">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-              <h4>Desarrollo de Aplicaciones</h4>
-            </a>
-          </li>
-          <!-- End tab nav item -->
-
-          <li class="nav-item col-lg-2 col-sm-12">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
               <h4>Redes Sociales</h4>
             </a>
           </li>
-          <li class="nav-item col-lg-3 col-sm-12">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
-              <h4>Análisis y seguimiento</h4>
+          <li class="nav-item col-lg-4 col-sm-12">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <h4>Sistemas</h4>
             </a>
           </li>
           <!-- End tab nav item -->
@@ -189,45 +177,8 @@
           </div>
           <!-- End tab content item -->
 
+        
           <div class="tab-pane" id="tab-2">
-            <div class="row">
-              <div
-                class="col-lg-6 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
-              >
-                <h3>Marketing digital</h3>
-                <p class="fst-italic">
-                  Ayudamos a su empresa a crear una estrategia de marketing
-                  digital completa, desde la publicidad en redes sociales hasta
-                  la optimización de motores de búsqueda (SEO) y el email
-                  marketing.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/images/cover-1.png" alt="" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-          <!-- End tab content item -->
-
-          <div class="tab-pane" id="tab-3">
-            <div class="row">
-              <div
-                class="col-lg-6 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
-              >
-                <h3>Desarrollo de aplicaciones móviles</h3>
-                <p class="fst-italic">
-                  Diseñamos y desarrollamos aplicaciones móviles a medida para
-                  iOS y Android.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/images/cover-1.png" alt="" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-          <!-- End tab content item -->
-
-          <div class="tab-pane" id="tab-4">
             <div class="row">
               <div
                 class="col-lg-6 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
@@ -245,17 +196,14 @@
           </div>
           <!-- End tab content item -->
 
-          <div class="tab-pane" id="tab-5">
+          <div class="tab-pane" id="tab-3">
             <div class="row">
               <div
                 class="col-lg-6 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
               >
-                <h3>Análisis y seguimiento</h3>
+                <h3>Sistemas</h3>
                 <p class="fst-italic">
-                  Utilizamos herramientas de análisis de datos para hacer un
-                  seguimiento del rendimiento de su sitio web y sus campañas de
-                  marketing, y le proporcionamos informes detallados para
-                  ayudarlo a mejorar su estrategia.
+                  Desarrollamos el Sistema que necesitas. Todo a medida de tu empresa. Trabajamos con Institutos, Restaurantes y Almacenes.
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -353,7 +301,7 @@
                 </h6>
                 <div class="plan-price">
                   <p class="price m-0 display-2">
-                    <strong>$2000/desde</strong>
+                    <strong>Desde S/1250</strong>
                   </p>
                 </div>
               </div>
@@ -384,7 +332,7 @@
                 </h6>
                 <div class="plan-price">
                   <p class="price m-0 display-2">
-                    <strong>$600/desde</strong>
+                    <strong>Desde S/600</strong>
                   </p>
                 </div>
               </div>
@@ -419,7 +367,7 @@
                 </h6>
                 <div class="plan-price">
                   <p class="price m-0 display-2">
-                    <strong>$2500/desde</strong>
+                    <strong>Desde S/2500</strong>
                   </p>
                 </div>
               </div>
@@ -446,7 +394,6 @@
     <!-- End Prices Section -->
 
     <!-- Contact Section -->
-
     <section id="contact" class="get-started section-bg">
       <div class="container">
         <div class="row justify-content-between gy-4">
@@ -566,11 +513,22 @@
       >
     </div>
 
-      
+    <!-- Preloader -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
 
     <!-- Script Files -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/forms/validate.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+
     <!-- End script files -->
     
   </body>

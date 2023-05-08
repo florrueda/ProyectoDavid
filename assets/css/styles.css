@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
 /* Fonts */
 :root {
     --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -52,6 +58,24 @@
   /*--------------------------------------------------------------
 # Navbar Section
 --------------------------------------------------------------*/
+#navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  box-shadow: 0 4px 4px rgba(0,0,0,.3);
+  top: 0px;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+nav{
+  padding: 2rem;
+}
+
+.navbar-brand {
+  flex: 1;
+}
+
 
   @media (max-width: 650px) {
     .navbar-buttons {
@@ -62,7 +86,9 @@
   /*--------------------------------------------------------------
 # Home Section
 --------------------------------------------------------------*/
-
+#home {
+  padding-top: 2rem;
+}
 @media (max-width: 991px) {
   .image-wrapper {
     margin-bottom: 2rem;
@@ -307,6 +333,44 @@
 }
 
 @keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #0563bb;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
   }

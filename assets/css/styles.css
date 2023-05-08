@@ -6,9 +6,10 @@
   
   /* Colors */
   :root {
-    --color-default: #364d59;
-    --color-primary: #0d6efd;
-    --color-secondary: #52565e;
+    --color-default: #114B5F;
+    --color-primary: #028090;
+    --color-secondary: #456990;
+    --color-font: #EAF5E9;
   }
   
   /* Smooth scroll behavior */
@@ -57,6 +58,21 @@
     font-size: 18px;
   }
 
+    /*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+
+.btn {
+  background-color: var(--color-default);
+  color: var(--color-font);
+}
+
+.btn:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-font);
+}
+
+
   /*--------------------------------------------------------------
 # Navbar Section
 --------------------------------------------------------------*/
@@ -67,7 +83,7 @@
   box-shadow: 0 4px 4px rgba(0,0,0,.3);
   top: 0px;
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-font)
 }
 
 nav{
@@ -91,6 +107,17 @@ nav{
 #home {
   padding-top: 2rem;
 }
+
+.home-title h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 56px;
+}
+
+.home-title h1 span {
+  display: inline-block;
+}
+
 @media (max-width: 991px) {
   .image-wrapper {
     margin-bottom: 2rem;
@@ -342,7 +369,7 @@ nav{
 }
 
 .get-started .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: var(--color-secondary);
 }
 
 @-webkit-keyframes animate-loading {
@@ -363,6 +390,34 @@ nav{
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+  background-color: var(--color-primary);
+  color: var(--color-font);
+  padding: 0rem 2rem 1rem;
+}
+
+#footer a {
+  color: var(--color-font);
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: var(--color-default);
+  text-decoration: none;
+}
+
+@media (min-width: 576px)
+{ .container {
+    max-width: 100%;
+}
+    
 }
 
 /*--------------------------------------------------------------

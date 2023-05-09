@@ -101,7 +101,7 @@ nav {
 # Home Section
 --------------------------------------------------------------*/
 section {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .home-title {
@@ -134,7 +134,7 @@ section {
 }
 
 .image-wrapper img {
-  width: 80%;
+  width: 100%;
   object-fit: cover;
   margin-top: 1rem;
 }
@@ -444,26 +444,38 @@ section {
   background: #fff;
 }
 
-#preloader:before {
-  content: "";
+#preloader-circle {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #0563bb;
+  width: 7rem;
+  height: 7rem;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: animate-preloader 1s linear infinite;
 }
 
+#progress-text {
+  font-size: 2rem;
+  color: var(--color-font);
+  font-weight: 700;
+}
+
+
 @keyframes animate-preloader {
   0% {
-    transform: rotate(0deg);
+    background-color: var(--color-primary);
+  }
+
+  50% {
+    background-color: var(--color-default);
   }
 
   100% {
-    transform: rotate(360deg);
+    background-color: var(--color-secondary);
   }
 }

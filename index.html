@@ -29,8 +29,10 @@
               aria-controls="navbarTogglerDemo02"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              onclick="toggleIcon()"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon" id="navbarTogglerIcon"></span>
+              <span><i class="bi bi-x-lg" id="navbarCloseIcon"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -504,11 +506,11 @@
     </div>
 
     <!-- Preloader -->
-    <!-- <div id="preloader">
+    <div id="preloader">
       <div id="preloader-circle">
         <div id="progress-text"></div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Whatsapp button -->
     <a

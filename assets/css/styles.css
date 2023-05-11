@@ -97,6 +97,24 @@ nav {
   }
 }
 
+#navbarCloseIcon {
+  display: none;
+}
+
+#navbarTogglerIcon,
+#navbarCloseIcon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler[aria-expanded="true"] #navbarTogglerIcon {
+  display: none;
+}
+
+.navbar-toggler[aria-expanded="true"] #navbarCloseIcon {
+  display: inline-block;
+}
+
 /*--------------------------------------------------------------
 # Home Section
 --------------------------------------------------------------*/

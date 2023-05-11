@@ -21,7 +21,10 @@
       }, 15);
     });
   }
-
+  
+    /**
+   * Typed
+   */
   const typed = new Typed(".typed", {
     strings: ["mágicas", "innovadoras", "ágiles", "creativas"],
     loop: true,
@@ -34,4 +37,24 @@
       });
     },
   });
+
+
 })();
+
+function toggleIcons() {
+  var navbarTogglerIcon = document.getElementById("navbarTogglerIcon");
+  var navbarCloseIcon = document.getElementById("navbarCloseIcon");
+  var navbarButton = document.querySelector(".navbar-toggler");
+
+  if (navbarButton.getAttribute("aria-expanded") === "true") {
+    navbarTogglerIcon.style.display = "inline-block";
+    navbarCloseIcon.style.display = "none";
+  } else {
+    navbarTogglerIcon.style.display = "none";
+    navbarCloseIcon.style.display = "inline-block";
+  }
+}
+
+
+
+

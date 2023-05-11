@@ -456,7 +456,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 0.5s linear infinite;
 }
 
 #progress-text {
@@ -478,4 +478,67 @@ section {
   100% {
     background-color: var(--color-secondary);
   }
+}
+/*--------------------------------------------------------------
+# Scroll Top
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #df1529;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: orange;
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background: #92656a;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Whatsapp button
+--------------------------------------------------------------*/
+.whatsapp {
+  position: fixed;
+  /* visibility: hidden;
+  opacity: 0; */
+  right: 15px;
+  bottom: 5rem;
+  z-index: 99999;
+  background: green;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.whatsapp i {
+  font-size: 30px;
+  color:var(--color-font);
+  line-height: 0;
+}
+
+.whatsapp:hover {
+  background: rgb(108, 190, 108);
+}
+
+.whatsapp.active {
+  visibility: visible;
+  opacity: 1;
 }

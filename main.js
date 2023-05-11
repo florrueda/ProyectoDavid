@@ -18,16 +18,16 @@
           clearInterval(interval);
           document.querySelector("#preloader").remove();
         }
-      }, 50);
+      }, 15);
     });
   }
 
   const typed = new Typed(".typed", {
     strings: ["mágicas", "innovadoras", "ágiles", "creativas"],
     loop: true,
-    typeSpeed: 50,
-    backSpeed: 50,
-    backDelay: 2000,
+    typeSpeed: 80,
+    backSpeed: 80,
+    backDelay: 3000,
     onComplete: function () {
       document.querySelectorAll(".underline").forEach(function (element) {
         element.classList.add("animate");

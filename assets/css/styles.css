@@ -441,6 +441,10 @@ section {
   font-size: 1.45rem;
 }
 
+.icon-nav {
+padding-right: 3rem;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 100%;
@@ -502,8 +506,6 @@ section {
 --------------------------------------------------------------*/
 .scroll-top {
   position: fixed;
-  /* visibility: hidden; */
-  /* opacity: 0; */
   right: 15px;
   bottom: 15px;
   z-index: 99999;
@@ -534,8 +536,6 @@ section {
 --------------------------------------------------------------*/
 .whatsapp {
   position: fixed;
-  /* visibility: hidden;
-  opacity: 0; */
   right: 15px;
   bottom: 5rem;
   z-index: 99999;

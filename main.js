@@ -41,6 +41,9 @@
 
 })();
 
+    /**
+   * Navbar toggler
+   */
 function toggleIcons() {
   var navbarTogglerIcon = document.getElementById("navbarTogglerIcon");
   var navbarCloseIcon = document.getElementById("navbarCloseIcon");

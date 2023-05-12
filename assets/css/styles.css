@@ -6,9 +6,9 @@
 
 /* Colors */
 :root {
-  --color-default: #114B5F;
-  --color-primary: #028090;
-  --color-secondary: #456990;
+  --color-default: #f84b1b;
+  --color-primary: #f76403;
+  --color-secondary: #ee8105;
   --color-font: #EAF5E9;
 }
 
@@ -68,6 +68,12 @@ body {
   color: var(--color-font);
 }
 
+.btn-secondary {
+  background-color: var(--color-font);
+  color: black;
+  border: none;
+}
+
 
 /*--------------------------------------------------------------
 # Navbar Section
@@ -78,7 +84,7 @@ body {
   z-index: 100;
   box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
   top: 0px;
-  background-color: var(--color-primary);
+  background-color: black;
   color: var(--color-font)
 }
 
@@ -122,8 +128,13 @@ section {
   padding: 1rem;
 }
 
+#home {
+  background-color: var(--color-primary);
+}
+
 .home-title {
   padding: 2rem;
+  color: var(--color-font);
 }
 
 .home-title h1 {
@@ -141,12 +152,22 @@ section {
 }
 
 @media (max-width: 991px) {
+  .before-typed {
+    display: block;
+  }
+
+
+  .home-title {
+    padding: 1rem;
+  }
+
   .home-title h1 {
     font-size: 40px;
   }
 
   .image-wrapper {
     margin-bottom: 2rem;
+    background-color: white;
   }
 
 }
@@ -170,7 +191,7 @@ section {
   width: 100%;
   height: 1rem;
   z-index: -1;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   transition: width 0.3s ease;
 }
 
@@ -307,6 +328,10 @@ section {
   .get-started .php-email-form {
     padding: 20px;
   }
+
+  .get-started {
+    margin: 1rem;
+  }
 }
 
 .get-started .php-email-form h3 {
@@ -422,7 +447,7 @@ section {
 --------------------------------------------------------------*/
 
 #footer {
-  background-color: var(--color-primary);
+  background-color: var(--color-default);
   color: var(--color-font);
   padding: 0rem 2rem 1rem;
 }
@@ -433,7 +458,7 @@ section {
 }
 
 #footer a:hover {
-  color: var(--color-default);
+  color: var(--color-secondary);
   text-decoration: none;
 }
 
@@ -455,6 +480,7 @@ padding-right: 3rem;
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
+
 #preloader {
   position: fixed;
   top: 0;
@@ -463,44 +489,25 @@ padding-right: 3rem;
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: var(--color-primary);
 }
 
-#preloader-circle {
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  width: 7rem;
-  height: 7rem;
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: animate-preloader 0.5s linear infinite;
+#progress-canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
 #progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 2rem;
   color: var(--color-font);
   font-weight: 700;
 }
 
-
-@keyframes animate-preloader {
-  0% {
-    background-color: var(--color-primary);
-  }
-
-  50% {
-    background-color: var(--color-default);
-  }
-
-  100% {
-    background-color: var(--color-secondary);
-  }
-}
 /*--------------------------------------------------------------
 # Scroll Top
 --------------------------------------------------------------*/
@@ -509,7 +516,7 @@ padding-right: 3rem;
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #df1529;
+  background: var(--color-secondary);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -518,12 +525,12 @@ padding-right: 3rem;
 
 .scroll-top i {
   font-size: 24px;
-  color: orange;
+  color: var(--color-font);
   line-height: 0;
 }
 
 .scroll-top:hover {
-  background: #92656a;
+  background: var(--color-primary);
 }
 
 .scroll-top.active {

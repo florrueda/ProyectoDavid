@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marketing</title>
+    <link rel="icon" href="./assets/images/SistemaSmartFav.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/images/SistemaSmartFav.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css" />
     <link
@@ -65,10 +67,10 @@
     <!-- End Navbar Section -->
 
     <!-- Home Section -->
-    <section id="home">
+    <section id="home" class="py-5">
       <div class="container my-5">
         <div class="row justify-content-center align-items-center">
-          <div class="col-12 col-md">
+          <div class="col-12 col-md title-container">
             <div class="home-title">
               <h1 class="mb-3">
                 <span class="before-typed">
@@ -89,7 +91,9 @@
             </div>
           </div>
           <div class="col-12 col-md image-wrapper">
-            <img src="assets/images/home.png" alt="home-img" />
+            <!-- <a href="https://www.freepik.es/vector-gratis/reproductor-multimedia-software-aplicacion-informatica-aplicacion-geolocalizacion-funcion-determinacion-ubicacion-implementador-masculino-personaje-dibujos-animados-programador_11669699.htm#from_view=detail_author"></a> -->
+            <img src="assets/images/20943879.jpg" alt="Imagen de vectorjuice  en Freepik" />
+            
           </div>
         </div>
       </div>
@@ -231,7 +235,7 @@
         <div class="content">
           <div class="title col-md-12 col-lg-10">
             <h3 class="mb-4">
-              <strong>Clientes</strong>
+              <strong>Socios estrategicos</strong>
             </h3>
           </div>
         </div>
@@ -500,21 +504,22 @@
       <span style="margin: 0; text-align: center" class="display-7">
         Made by
       </span>
-      <a style="z-index: 1" href=""
+      <a style="z-index: 1" href="https://florrueda.github.io/" target="_blank"
         >Florencia Rueda</a
       >
     </div>
 
     <!-- Preloader -->
     <div id="preloader">
-      <div id="preloader-circle">
-        <div id="progress-text"></div>
-      </div>
+      <canvas id="progress-canvas" width="120" height="120"></canvas>
+      <div id="progress-text"></div>
     </div>
+
 
     <!-- Whatsapp button -->
     <a
-    href="#"
+    href="https://wa.me/+51969958234?text=Hola%20quiero%20presupuestar%20...%20"
+    target="_blank"
     class="whatsapp d-flex align-items-center justify-content-center"
     ><i class="bi bi-whatsapp"></i></a>
     

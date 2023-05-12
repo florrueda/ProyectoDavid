@@ -4,25 +4,41 @@
   /**
    * Preloader
    */
+
   let preloader = document.getElementById("preloader");
   if (preloader) {
-    window.addEventListener("load", () => {
-      let progressText = document.querySelector("#progress-text");
+    let canvas = document.getElementById("progress-canvas");
+    let ctx = canvas.getContext("2d");
+    let progressText = document.getElementById("progress-text");
 
-      let progress = 0;
-      let interval = setInterval(() => {
-        progress++;
-        progressText.textContent = progress + "%";
+    let progress = 0;
+    let interval = setInterval(() => {
+      progress++;
+      progressText.textContent = progress + "%";
+      drawProgress(progress);
 
-        if (progress >= 100) {
-          clearInterval(interval);
-          document.querySelector("#preloader").remove();
-        }
-      }, 15);
-    });
+      if (progress >= 100) {
+        clearInterval(interval);
+        document.querySelector("#preloader").remove();
+      }
+    }, 15);
+    function drawProgress(percentage) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.lineWidth = 10;
+      ctx.strokeStyle = "white";
+      ctx.beginPath();
+      ctx.arc(
+        canvas.width / 2,
+        canvas.height / 2,
+        canvas.width / 2 - ctx.lineWidth / 2,
+        -Math.PI / 2,
+        (2 * Math.PI * percentage) / 100 - Math.PI / 2
+      );
+      ctx.stroke();
+    }
   }
-  
-    /**
+
+  /**
    * Typed
    */
   const typed = new Typed(".typed", {
@@ -37,13 +53,11 @@
       });
     },
   });
-
-
 })();
 
-    /**
-   * Navbar toggler
-   */
+/**
+ * Navbar toggler
+ */
 function toggleIcons() {
   var navbarTogglerIcon = document.getElementById("navbarTogglerIcon");
   var navbarCloseIcon = document.getElementById("navbarCloseIcon");
@@ -57,7 +71,3 @@ function toggleIcons() {
     navbarCloseIcon.style.display = "inline-block";
   }
 }
-
-
-
-

@@ -53,6 +53,28 @@
       });
     },
   });
+
+  new Swiper('.slides-2', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
+  });
+  
 })();
 
 /**
@@ -71,3 +93,5 @@ function toggleIcons() {
     navbarCloseIcon.style.display = "inline-block";
   }
 }
+
+  

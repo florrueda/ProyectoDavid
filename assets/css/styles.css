@@ -33,13 +33,33 @@ body {
 .content h3 {
   font-size: 36px;
   color: var(--color-secondary);
-  font-weight: 600;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.content h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--color-primary);
+  left: 0; 
+  bottom: 0;
+}
+
+
+.contact-content h3 {
+  font-size: 36px;
+  color: var(--color-secondary);
   margin-bottom: 25px;
   padding-bottom: 25px;
   position: relative;
 }
 
-.content h3:after {
+.contact-content h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -50,7 +70,7 @@ body {
   bottom: 0;
 }
 
-.content p {
+.contact-content p {
   font-size: 18px;
 }
 
@@ -198,8 +218,6 @@ section {
 
 }
 
-
-
 .typed {
   position: relative;
   display: inline-block;
@@ -225,6 +243,7 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
 #about p {
   font-size: 1.5rem;
   text-align: center;
@@ -239,7 +258,7 @@ section {
 
 @media (max-width: 650px) {
   #about p {
-    font-size: 0.75rem;
+    font-size: 1rem;
     padding: 1rem;
   }
 }
@@ -248,77 +267,63 @@ section {
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.features .nav-tabs {
-  border: 0;
-}
-
-.features .nav-link {
-  padding: 15px 0;
-  transition: 0.3s;
-  color: var(--color-secondary);
-  border-radius: 0;
+.service-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  cursor: pointer;
+}
+
+.flip-box {
+  perspective: 1000px;
+  height: 40vh;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10%;
+  color: var(--color-font);
+}
+
+.flip-box-inner {
+  width: 100%;
   height: 100%;
-  border: 0;
-  border-bottom: 4px solid #e2e4e6;
-}
-
-.features .nav-link i {
-  padding-right: 15px;
-  font-size: 48px;
-}
-
-.features .nav-link h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0;
-}
-
-@media (max-width: 575px) {
-  .features .nav-link h4 {
-    font-size: 16px;
-  }
-}
-
-.features .nav-link:hover {
-  color: var(--color-primary);
-}
-
-.features .nav-link.active {
-  color: var(--color-primary);
-  background-color: transparent;
-  border-color: var(--color-primary);
-}
-
-.features .tab-content {
-  margin-top: 30px;
-}
-
-.features .tab-pane h3 {
-  font-weight: 700;
   position: relative;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
 }
 
-.features .tab-pane h3:after {
-  content: "";
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--color-primary);
-  left: 0;
-  bottom: 0;
+  backface-visibility: hidden;
+  border-radius: 10%;
+
 }
 
-.features .tab-pane img {
-  width: 80%;
-  object-fit: cover;
+.flip-box-front {
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.flip-box-back {
+  background-color: #B8D5B8;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+
+
+
 
 
 /*--------------------------------------------------------------
@@ -337,6 +342,12 @@ section {
 /*--------------------------------------------------------------
 # Client Section
 --------------------------------------------------------------*/
+.swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .clients img {
   filter: grayscale(100%);
   opacity: 0.5;
@@ -545,6 +556,8 @@ section {
 --------------------------------------------------------------*/
 .scroll-top {
   position: fixed;
+  visibility: hidden;
+  opacity: 0;
   right: 15px;
   bottom: 15px;
   z-index: 99999;
@@ -570,11 +583,14 @@ section {
   opacity: 1;
 }
 
+
 /*--------------------------------------------------------------
 # Whatsapp button
 --------------------------------------------------------------*/
 .whatsapp {
   position: fixed;
+  visibility: hidden;
+  opacity: 0;
   right: 15px;
   bottom: 5rem;
   z-index: 99999;

@@ -30,6 +30,8 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
     <!-- Navbar Section -->
@@ -111,7 +113,7 @@
     <!-- End Home Section -->
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" data-aos="fade-up" class="fullscreen-section">
       <div class="container my-4">
         <div class="row justify-content-center">
           <div class="col-md-12 col-lg-10">
@@ -137,104 +139,67 @@
     <!-- End About Section -->
 
     <!-- Services Section -->
-    <section id="services" class="features">
+    <section id="services" class="fullscreen-section">
       <div class="container">
-        <div class="col-12 col-lg-9">
-          <div class="content">
-            <div class="title col-md-12 col-lg-10">
+        <div class="col-12 col-lg-12 text-center">
+          <div class="content" data-aos="fade-up">
+            <div class="title col-md-12 col-lg-12">
               <h3 class="mb-4">
                 <strong>Servicios</strong>
               </h3>
             </div>
           </div>
         </div>
-        <ul class="nav nav-tabs row g-2 d-flex">
-          <li class="nav-item col-lg-4 col-sm-12">
-            <a
-              class="nav-link active show"
-              data-bs-toggle="tab"
-              data-bs-target="#tab-1"
-            >
-              <h4>Diseño web</h4>
-            </a>
-          </li>
-          <!-- End tab nav item -->
-
-          <li class="nav-item col-lg-4 col-sm-12">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-              <h4>Redes Sociales</h4>
-            </a>
-          </li>
-          <li class="nav-item col-lg-4 col-sm-12">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-              <h4>Sistemas</h4>
-            </a>
-          </li>
-          <!-- End tab nav item -->
-        </ul>
 
         <div class="tab-content">
-          <div class="tab-pane active show" id="tab-1">
-            <div class="row">
-              <div
-                class="col-lg-6 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <h3>Diseño web y desarrollo</h3>
-                <p class="fst-italic">
-                  Creamos sitios web personalizados y profesionales, que se
-                  adaptan a las necesidades de su negocio y a las últimas
-                  tendencias en diseño web.
-                </p>
-              </div>
-              <div
-                class="col-lg-6 order-1 order-lg-2 text-center"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <img src="assets/images/cover-1.png" alt="" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-          <!-- End tab content item -->
+            <div class="row service-container">
 
-          <div class="tab-pane" id="tab-2">
-            <div class="row">
-              <div
-                class="col-lg-6 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
-              >
-                <h3>Gestión de redes sociales</h3>
-                <p class="fst-italic">
-                  Nos encargamos de administrar sus cuentas de redes sociales,
-                  creando contenido de calidad y aumentando su alcance en línea.
-                </p>
+              <div class="flip-box col-lg-3 col-md-6 mt-3 mt-lg-0 service-item ">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h3>Diseño web y desarrollo</h3>
+                  </div>
+                  <div class="flip-box-back">
+                    <p>
+                      Creamos sitios web personalizados y profesionales, que se
+                      adaptan a las necesidades de su negocio y a las últimas
+                      tendencias en diseño web.
+                      </p>
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/images/cover-1.png" alt="" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-          <!-- End tab content item -->
 
-          <div class="tab-pane" id="tab-3">
-            <div class="row">
-              <div
-                class="col-lg-6 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
-              >
-                <h3>Sistemas</h3>
-                <p class="fst-italic">
-                  Desarrollamos el sistema que necesitas. Todo a medida de tu
-                  empresa. Trabajamos con Institutos, Restaurantes y Almacenes.
-                </p>
+              <div class="flip-box col-lg-3 col-md-6 mt-3 mt-lg-0 service-item ">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h3>Sistemas</h3>
+                  </div>
+                  <div class="flip-box-back">
+                    <p>
+                      Desarrollamos el sistema que necesitas. Todo a medida de tu
+                      empresa. Trabajamos con Institutos, Restaurantes y Almacenes.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/images/cover-1.png" alt="" class="img-fluid" />
+
+              <div class="flip-box col-lg-3 col-md-6 mt-3 mt-lg-0 service-item ">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h3>Gestión de redes sociales</h3>
+                  </div>
+                  <div class="flip-box-back">
+                    <p>
+                      Nos encargamos de administrar sus cuentas de redes sociales,
+                      creando contenido de calidad y aumentando su alcance en línea.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
+
           </div>
-          <!-- End tab content item -->
         </div>
+
       </div>
     </section>
     <!-- End Services Section -->
@@ -242,15 +207,17 @@
     <!-- Client Section -->
     <section id="clients" class="clients">
       <div class="container mb-4">
-        <div class="content">
-          <div class="title col-md-12 col-lg-10">
+        <div class="col-12 col-lg-12 text-center">
+        <div class="content" data-aos="fade-up">
+          <div class="title col-md-12 col-lg-12">
             <h3 class="mb-4">
               <strong>Socios estrategicos</strong>
             </h3>
           </div>
         </div>
+      </div>
 
-        <div class="slides-2 swiper">
+        <div class="slides-2 swiper" data-aos="fade-up">
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
@@ -303,14 +270,16 @@
     <!-- Prices Section -->
     <section id="prices" class="prices">
       <div class="container">
-        <div class="content">
-          <div class="title col-md-12 col-lg-10">
+        <div class="col-12 col-lg-12 text-center">
+        <div class="content" data-aos="fade-up">
+          <div class="title col-md-12 col-lg-12">
             <h3 class="mb-4">
               <strong>Nuestros precios</strong>
             </h3>
           </div>
         </div>
-        <div class="row justify-content-center">
+      </div>
+        <div class="row justify-content-center" data-aos="fade-up">
           <!-- Price item -->
           <div class="col-lg-4 col-md- align-center col-lg-3">
             <div class="plan">
@@ -411,17 +380,17 @@
       <div class="container">
         <div class="row justify-content-between gy-4">
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
-            <div class="content">
+            <div class="contact-content">
               <div class="title col-md-12 col-lg-10">
                 <h3 class="align-center mb-4 display-2">
-                  <strong>Contactanos</strong>
+                  <strong>Contáctanos</strong>
                 </h3>
               </div>
-              <p>Dejanos tu mensaje y te contactaremos a la brevedad!</p>
+              <p>Déjanos tu mensaje y te contactaremos a la brevedad!</p>
             </div>
           </div>
 
-          <div class="col-lg-5" data-aos="fade">
+          <div class="col-lg-5" data-aos="fade-up">
             <form
               action="assets/forms/form.php"
               method="POST"
@@ -433,7 +402,7 @@
                     type="text"
                     name="name"
                     class="form-control"
-                    placeholder="Nombre"
+                    placeholder="Nombre:"
                     required
                   />
                 </div>
@@ -443,7 +412,7 @@
                     type="email"
                     class="form-control"
                     name="email"
-                    placeholder="Email"
+                    placeholder="Email:"
                     required
                   />
                 </div>
@@ -453,7 +422,7 @@
                     type="text"
                     class="form-control"
                     name="phone"
-                    placeholder="Telefono"
+                    placeholder="Teléfono"
                     required
                   />
                 </div>
@@ -463,7 +432,7 @@
                     class="form-control"
                     name="message"
                     rows="6"
-                    placeholder="Mensaje"
+                    placeholder="Mensaje:"
                     required
                   ></textarea>
                 </div>
@@ -517,12 +486,6 @@
       >
     </div>
 
-    <!-- Preloader -->
-    <div id="preloader">
-      <canvas id="progress-canvas" width="120" height="120"></canvas>
-      <div id="progress-text"></div>
-    </div>
-
     <!-- Whatsapp button -->
     <a
       href="https://wa.me/+51969958234?text=Hola%20quiero%20presupuestar%20...%20"
@@ -537,12 +500,20 @@
       class="scroll-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+      <canvas id="progress-canvas" width="120" height="120"></canvas>
+      <div id="progress-text"></div>
+    </div>
 
+    
     <!-- Script Files -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/forms/validate.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
 
     <!-- End script files -->

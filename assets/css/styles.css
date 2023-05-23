@@ -20,6 +20,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -243,6 +244,12 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+#about, #services {
+  height: 650px;
+  display: flex;
+  align-items: center;
+}
+
 
 #about p {
   font-size: 1.5rem;
@@ -257,6 +264,11 @@ section {
 }
 
 @media (max-width: 650px) {
+  
+  #about {
+    height: 100vh;
+  }
+  
   #about p {
     font-size: 1rem;
     padding: 1rem;
@@ -267,6 +279,7 @@ section {
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+
 .service-container {
   display: flex;
   justify-content: center;
@@ -320,11 +333,32 @@ section {
   padding: 1rem;
 }
 
+@media (max-width: 650px) {
 
+  #services {
+    display: block;
+  }
 
+  .flip-box {
+    height: 30vh;
+    width: 80%;
+  }
 
+  #clients {
+    margin-top: 10rem;
+  }
+  
+}
 
+@media (max-width: 800px) {
 
+  .flip-box {
+    height: 35vh;
+    width: 50%;
+    margin: 0;
+  }
+  
+}
 
 /*--------------------------------------------------------------
 # Prices Section
@@ -342,6 +376,7 @@ section {
 /*--------------------------------------------------------------
 # Client Section
 --------------------------------------------------------------*/
+
 .swiper {
   display: flex;
   justify-content: center;
@@ -356,6 +391,12 @@ section {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+#contact {
+  height: 650px;
+  display: flex;
+  align-items: center;
+}
+
 .get-started {
   margin: 3rem;
 }

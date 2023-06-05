@@ -42,7 +42,7 @@
    * Typed
    */
   const typed = new Typed(".typed", {
-    strings: ["mágicas", "innovadoras", "ágiles", "creativas"],
+    strings: ["innovadoras", "sostenibles", "funcionales", "ligeras", "pioneras"],
     loop: true,
     typeSpeed: 80,
     backSpeed: 80,

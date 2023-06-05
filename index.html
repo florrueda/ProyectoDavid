@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marketing</title>
+    <title>SistemaBot</title>
     <link
       rel="icon"
       href="./assets/images/SistemaSmartFav.png"
@@ -27,18 +27,19 @@
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-/>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Navbar Section -->
     <div id="navbar">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid d-flex justify-content-around">
-          <a class="navbar-brand" href="#">Real Marketing</a>
+          <a class="navbar-brand" href="#"
+            ><img class="navbar-img" src="./assets/images/Logo.png"
+          /></a>
           <div class="navbar-items">
             <button
               class="navbar-toggler"
@@ -56,21 +57,41 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
+                  <a class="nav-link active" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link active" href="#about">Nosotros</a>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#services"
-                    >Servicios</a
-                  >
+                <li class="dropdown nav-item">
+                  <a href="#" class="nav-link active services-link">
+                    <span>Servicios</span>
+                    <i class="bi bi-chevron-down dropdown-indicator"></i
+                  ></a>
+                  <ul>
+                    <li>
+                      <a href="#services" class="nav-link active"
+                        >Diseño y desarrollo web</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#services" class="nav-link active"
+                        >Desarrollo de software</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#services" class="nav-link active"
+                        >Cloud Computing</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#services" class="nav-link active"
+                        >Soporte técnico</a
+                      >
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#prices">Precios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#contact">Contacto</a>
+                  <a class="nav-link active" href="#clients">Clientes</a>
                 </li>
               </ul>
             </div>
@@ -93,7 +114,7 @@
                 <span class="before-typed"> Soluciones </span>
 
                 <span class="typed"></span>
-                <span class="after-typed"> en la era digital </span>
+                <span class="after-typed"> en la era digital. </span>
               </h1>
               <div class="mt-3">
                 <a class="btn btn-secondary" href="#contact">Comencemos</a>
@@ -119,17 +140,10 @@
           <div class="col-md-12 col-lg-10">
             <hr class="line" />
             <p class="my-4">
-              Somos una empresa especializada en servicios digitales y estamos
-              aquí para ayudarlo a llevar su negocio al siguiente nivel. Nuestra
-              agencia ofrece una amplia gama de servicios digitales diseñados
-              para aumentar su presencia en línea y mejorar su estrategia
-              comercial.
+              Nos apasiona la tecnología y estamos comprometidos en ayudar a las empresas a aprovechar al máximo su potencial digital. Ofrecemos una amplia gama de servicios y soluciones informáticas para impulsar tu negocio hacia el siguiente nivel.
               <br />
               <br />
-              En nuestra agencia digital, contamos con un equipo altamente
-              capacitado de diseñadores, desarrolladores, especialistas en
-              marketing digital y expertos en análisis de datos que trabajan
-              juntos para ofrecer los mejores resultados para nuestros clientes.
+              Nuestro equipo de expertos en tecnología está capacitado en áreas clave como Diseño y desarrollo web, Desarrollo de software, Cloud computing, Inteligencia artificial y mucho más.
             </p>
             <hr class="line" />
           </div>
@@ -152,54 +166,107 @@
         </div>
 
         <div class="tab-content">
-            <div class="row service-container" data-aos="fade-up">
-
-              <div class="flip-box col-lg-3 col-md-3 mt-3 mt-lg-0 service-item ">
+          <div class="row service-container" data-aos="fade-up">
+            <div class="col-lg-4 col-sm-6 col-xs-12 mt-3 mt-lg-0">
+              <div class="flip-box service-item">
                 <div class="flip-box-inner">
                   <div class="flip-box-front">
-                    <h3>Diseño web y desarrollo</h3>
+                    <h3>Diseño y desarrollo web</h3>
                   </div>
                   <div class="flip-box-back">
                     <p>
-                      Creamos sitios web personalizados y profesionales, que se
-                      adaptan a las necesidades de su negocio y a las últimas
-                      tendencias en diseño web.
-                      </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flip-box col-lg-3 col-md-3 mt-3 mt-lg-0 service-item ">
-                <div class="flip-box-inner">
-                  <div class="flip-box-front">
-                    <h3>Sistemas</h3>
-                  </div>
-                  <div class="flip-box-back">
-                    <p>
-                      Desarrollamos el sistema que necesitas. Todo a medida de tu
-                      empresa. Trabajamos con Institutos, Restaurantes y Almacenes.
+                      Creamos sitios web visualmente atractivos y altamente
+                      funcionales que se adaptan a tus necesidades comerciales.
+                      Nuestro equipo de expertos se encarga de todos los
+                      aspectos, desde el diseño y la programación hasta la
+                      optimización para motores de búsqueda, asegurando que tu
+                      empresa destaque entre la competencia. Ya sea que
+                      necesites un sitio web corporativo, una tienda on-line o
+                      una plataforma interactiva, estamos aquí para ayudarte a
+                      alcanzar tus objetivos en línea.
                     </p>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="flip-box col-lg-3 col-md-3 mt-3 mt-lg-0 service-item ">
+            <div class="col-lg-4 col-sm-6 col-xs-12 mt-3 mt-lg-0">
+              <div class="flip-box service-item">
                 <div class="flip-box-inner">
                   <div class="flip-box-front">
-                    <h3>Gestión de redes sociales</h3>
+                    <h3>Desarrollo de software</h3>
                   </div>
                   <div class="flip-box-back">
                     <p>
-                      Nos encargamos de administrar sus cuentas de redes sociales,
-                      creando contenido de calidad y aumentando su alcance en línea.
+                      Transforma tu negocio con nuestro servicio de desarrollo
+                      de software a medida, Nuestro equipo de expertos en
+                      desarrollo de software está listo para crear soluciones
+                      personalizadas que impulsen la eficiencia y el crecimiento
+                      de tu empresa. Desde aplicaciones móviles y plataformas
+                      web hasta sistemas de gestión empresarial y automatización
+                      de procesos, diseñamos y desarrollamos software de alta
+                      calidad que se adapta a tus necesidades específicas. Con
+                      una combinación de tecnologías modernas y mejores
+                      prácticas de desarrollo, te ofrecemos soluciones
+                      escalables, seguras y altamente funcionales. 
                     </p>
                   </div>
                 </div>
               </div>
+            </div>
 
+            <div class="col-lg-4 col-sm-6 col-xs-12 mt-3 mt-lg-0">
+              <div class="flip-box service-item">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h3>Cloud computing</h3>
+                  </div>
+                  <div class="flip-box-back">
+                    <p>
+                      Optimiza tu rendimiento, reduce costos y mejora la
+                      flexibilidad con nuestro servicio de Cloud computing, te
+                      ofrecemos una solución flexible, escalable y segura para
+                      almacenar, procesar y acceder a tus datos de manera
+                      eficiente. Con nuestra experiencia en la implementación y
+                      gestión de infraestructuras en la nube, te brindamos la
+                      capacidad de aprovechar recursos computacionales de última
+                      generación sin preocuparte por la infraestructura física.
+                      Ya sea que necesites almacenamiento en la nube, híbridos,
+                      soluciones de respaldo y recuperación de datos, nuestro
+                      equipo se encargará de todas las necesidades de tu
+                      negocio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-xs-12 mt-3 mt-lg-0">
+              <div class="flip-box service-item">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h3>Soporte técnico</h3>
+                  </div>
+                  <div class="flip-box-back">
+                    <p>
+                      Ofrecemos soporte técnico especializado en Desktop y
+                      laptops. Contamos con la experiencia y herramientas para
+                      la resolución de problemas de cómputo. Asimismo,
+                      trabajamos de manera eficiente y brindamos respuesta
+                      rápida a incidentes. Si necesita que sus equipos siempre
+                      estén funcionales y sus colaboradores puedan realizar sus
+                      tareas correctamente, estamos a su servicio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-services">
+            <h4>Contáctanos para obtener una solución personalizada y llevar tu negocio al siguiente nivel.
+            </h4>
           </div>
         </div>
-
       </div>
     </section>
     <!-- End Services Section -->
@@ -208,172 +275,62 @@
     <section id="clients" class="clients">
       <div class="container mb-4">
         <div class="col-12 col-lg-12 text-center">
-        <div class="content" data-aos="fade-up">
-          <div class="title col-md-12 col-lg-12">
-            <h3 class="mb-4">
-              <strong>Socios estrategicos</strong>
-            </h3>
+          <div class="content" data-aos="fade-up">
+            <div class="title col-md-12 col-lg-12">
+              <h3 class="mb-4">
+                <strong>Socios estrategicos</strong>
+              </h3>
+            </div>
           </div>
         </div>
-      </div>
 
         <div class="slides-2 swiper" data-aos="fade-up">
           <div class="swiper-wrapper">
-
             <div class="swiper-slide">
               <img
-              src="assets/images/cliente-1-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
-              alt=""
-            />
+                src="assets/images/cliente-1-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+                alt=""
+              />
             </div>
 
             <div class="swiper-slide">
               <img
-                  src="assets/images/cliente.2-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
-                  alt=""
-                />
+                src="assets/images/cliente.2-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+                alt=""
+              />
             </div>
 
             <div class="swiper-slide">
               <img
-                  src="assets/images/cliente-4-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
-                  alt=""
-                />
+                src="assets/images/cliente-4-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+                alt=""
+              />
             </div>
 
             <div class="swiper-slide">
               <img
-              src="assets/images/cliente-5-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
-              alt=""
-            />
+                src="assets/images/cliente-5-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+                alt=""
+              />
             </div>
 
             <div class="swiper-slide">
               <img
-                  src="assets/images/cliente-6-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
-                  alt=""
-                />
+                src="assets/images/cliente-6-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+                alt=""
+              />
             </div>
             <div class="swiper-slide">
               <img
-                  src="assets/images/cliente-8-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
-                  alt=""
-                />
+                src="assets/images/cliente-8-ovwj10e7vk0aipjxx4i4pvn5au7881r24bfuy76vxe.png"
+                alt=""
+              />
             </div>
-
           </div>
         </div>
       </div>
     </section>
     <!-- End Client Section -->
-
-    <!-- Prices Section -->
-    <section id="prices" class="prices">
-      <div class="container">
-        <div class="col-12 col-lg-12 text-center">
-        <div class="content" data-aos="fade-up">
-          <div class="title col-md-12 col-lg-12">
-            <h3 class="mb-4">
-              <strong>Nuestros precios</strong>
-            </h3>
-          </div>
-        </div>
-      </div>
-        <div class="row justify-content-center" data-aos="fade-up">
-          <!-- Price item -->
-          <div class="col-lg-4 col-md- align-center col-lg-3">
-            <div class="plan">
-              <div class="plan-header">
-                <h3 class="plan-title mb-3">
-                  <strong>Sitio web</strong>
-                </h3>
-                <div class="plan-price">
-                  <p class="price m-0">
-                    <strong>Desde S/1250</strong>
-                  </p>
-                </div>
-              </div>
-              <div class="plan-body">
-                <div class="plan-list mb-4">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Incluye Hosting y Dominio</li>
-                    <li class="list-group-item">
-                      Call to Action - WhatsApp - RRSS
-                    </li>
-                    <li class="list-group-item">Formularios de Contacto</li>
-                  </ul>
-                </div>
-                <div class="text-center">
-                  <a href="#contact" class="btn">Escribenos ahora</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Price item -->
-          <div class="col-lg-4 col-md-6 align-center col-lg-3">
-            <div class="plan">
-              <div class="plan-header">
-                <h3 class="plan-title mb-3">
-                  <strong>Redes sociales</strong>
-                </h3>
-                <div class="plan-price">
-                  <p class="price m-0">
-                    <strong>Desde S/600</strong>
-                  </p>
-                </div>
-              </div>
-              <div class="plan-body">
-                <div class="plan-list mb-4">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                      Planificación y Estrategia Digital
-                    </li>
-                    <li class="list-group-item">
-                      Desde 12 Publicaciones al Mes
-                    </li>
-                    <li class="list-group-item">
-                      Gestión de Comentarios y DMs
-                    </li>
-                  </ul>
-                </div>
-                <div class="text-center">
-                  <a href="#contact" class="btn">Escribenos ahora</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Price item -->
-          <div class="col-lg-4 col-md-6 align-center col-lg-3">
-            <div class="plan">
-              <div class="plan-header">
-                <h3 class="plan-title mb-3">
-                  <strong>Sistemas</strong>
-                </h3>
-                <div class="plan-price">
-                  <p class="price m-0">
-                    <strong>Desde S/2500</strong>
-                  </p>
-                </div>
-              </div>
-              <div class="plan-body">
-                <div class="plan-list mb-4">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Sistemas de Biblioteca</li>
-                    <li class="list-group-item">Sistemas Ecommerce - Ventas</li>
-                    <li class="list-group-item">Sistemas de Administración</li>
-                  </ul>
-                </div>
-                <div class="text-center">
-                  <a href="#contact" class="btn">Escribenos ahora</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Price item -->
-        </div>
-      </div>
-    </section>
-    <!-- End Prices Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="get-started section-bg">
@@ -391,11 +348,7 @@
           </div>
 
           <div class="col-lg-5" data-aos="fade-up">
-            <form
-              action="forms/form.php"
-              method="POST"
-              class="php-email-form"
-            >
+            <form action="forms/form.php" method="POST" class="php-email-form">
               <div class="row gy-3">
                 <div class="col-md-12">
                   <input
@@ -463,7 +416,7 @@
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
         <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0">&copy; 2023 Real Marketing</span>
+          <span class="mb-3 mb-md-0">&copy; 2023 SistemaBot</span>
         </div>
 
         <ul class="icon-nav col-md-4 justify-content-end list-unstyled d-flex">
@@ -478,12 +431,12 @@
           </li>
         </ul>
       </footer>
-      <span style="margin: 0; text-align: center" class="display-7">
+      <!-- <span style="margin: 0; text-align: center" class="display-7">
         Made by
       </span>
       <a style="z-index: 1" href="https://florrueda.github.io/" target="_blank"
         >Florencia Rueda</a
-      >
+      > -->
     </div>
 
     <!-- Whatsapp button -->
@@ -500,14 +453,13 @@
       class="scroll-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
-    
+
     <!-- Preloader -->
-    <div id="preloader">
+    <!-- <div id="preloader">
       <canvas id="progress-canvas" width="120" height="120"></canvas>
       <div id="progress-text"></div>
-    </div>
+    </div> -->
 
-    
     <!-- Script Files -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="forms/validate.js"></script>

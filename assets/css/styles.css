@@ -382,6 +382,9 @@ section {
   align-items: center;
 }
 
+#about {
+  height: 650px;
+}
 
 #about p {
   font-size: 1.5rem;

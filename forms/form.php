@@ -1,5 +1,7 @@
 <?php
-$receiving_email_address = 'flor.rueda@gmail.com';
+$receiving_email_address = 'ventas@sistemabot.com';
+
+'soporte@sistemabot.com';
 
 
 $name = $_POST['name'];

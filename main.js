@@ -25,7 +25,7 @@
         function drawProgress(percentage) {
           ctx.clearRect(0, 0, canvas.width, canvas.height);
           ctx.lineWidth = 10;
-          ctx.strokeStyle = "white";
+          ctx.strokeStyle = "black";
           ctx.beginPath();
           ctx.arc(
             canvas.width / 2,

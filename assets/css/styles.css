@@ -107,6 +107,10 @@ body {
   border: 1px solid black ;
 }
 
+.btn-calendly {
+  margin: 1.5rem;
+}
+
 /*--------------------------------------------------------------
 # Navbar Section
 --------------------------------------------------------------*/
@@ -437,7 +441,22 @@ section {
   justify-content: center;
 }
 
-.flip-box {
+.service-container .box {
+  height: auto;
+  width: 250px;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 2rem;
+  border-radius: 5%;
+  color: var(--color-font);
+  background-color: var(--color-default);
+}
+
+.service-container h3 {
+  font-size: 1.5rem;
+}
+
+/* .flip-box {
   height: 40vh;
   padding: 1rem;
   margin: 1rem 2rem;
@@ -465,9 +484,9 @@ section {
   backface-visibility: hidden;
   border-radius: 10%;
 
-}
+} */
 
-.flip-box-front {
+/* .flip-box-front {
   background-color: var(--color-default);
   display: flex;
   justify-content: center;
@@ -488,13 +507,14 @@ section {
   font-size: 0.8rem;
   margin: 1rem;
 
-}
+} */
 
 .text-services {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 @media (max-width: 650px) {
@@ -507,14 +527,14 @@ section {
     justify-content: center;
   }
 
-  .flip-box {
+  /* .flip-box {
     height: 30vh;
     width: 80%;
   }
 
   .flip-box-front h3 {
     text-align: center;
-  }
+  } */
 
   #clients {
     margin-top: 5rem;

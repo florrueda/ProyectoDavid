@@ -86,8 +86,8 @@ body {
 .btn {
   background-color: var(--color-default);
   color: black;
-  font-weight: 600;
-  font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .btn:hover {
@@ -99,9 +99,13 @@ body {
   background-color: black;
   color: var(--color-font);
   border: none;
+  font-size: 1.3rem;
 
 }
 
+/* .btn-telephone {
+  border: 1px solid black ;
+} */
 
 /*--------------------------------------------------------------
 # Navbar Section
@@ -124,7 +128,7 @@ nav {
 }
 
 .navbar-img {
-  width: 20%;
+  width: 30%;
 }
 
 .navbar-buttons {

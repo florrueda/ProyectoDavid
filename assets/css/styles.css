@@ -310,7 +310,6 @@ section {
 #home .container {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .home-title {

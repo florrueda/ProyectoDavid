@@ -103,9 +103,9 @@ body {
 
 }
 
-/* .btn-telephone {
+.btn-telephone {
   border: 1px solid black ;
-} */
+}
 
 /*--------------------------------------------------------------
 # Navbar Section
@@ -116,7 +116,7 @@ body {
   z-index: 100;
   box-shadow: 0 4px 4px rgba(99, 94, 94, 0.3);
   top: 0px;
-  background-color: var(--color-primary);
+  background-color: rgba(237, 162, 124, 0.9);
 }
 
 nav {

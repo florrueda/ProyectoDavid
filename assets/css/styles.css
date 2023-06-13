@@ -100,6 +100,7 @@ body {
   color: var(--color-font);
   border: none;
   font-size: 1.3rem;
+  margin-top: 3rem;
 
 }
 
@@ -440,23 +441,8 @@ section {
   justify-content: center;
 }
 
-.service-container .box {
-  height: auto;
-  width: 250px;
-  text-align: center;
-  padding: 1rem;
-  margin: 1rem 2rem;
-  border-radius: 5%;
-  color: var(--color-font);
-  background-color: var(--color-default);
-}
-
-.service-container h3 {
-  font-size: 1.5rem;
-}
-
-/* .flip-box {
-  height: 40vh;
+.flip-box {
+  height: 30vh;
   padding: 1rem;
   margin: 1rem 2rem;
   border-radius: 10%;
@@ -469,6 +455,7 @@ section {
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.5s;
+  text-align: center;
 }
 
 .flip-box:hover .flip-box-inner {
@@ -483,9 +470,9 @@ section {
   backface-visibility: hidden;
   border-radius: 10%;
 
-} */
+}
 
-/* .flip-box-front {
+.flip-box-front {
   background-color: var(--color-default);
   display: flex;
   justify-content: center;
@@ -506,7 +493,7 @@ section {
   font-size: 0.8rem;
   margin: 1rem;
 
-} */
+}
 
 .text-services {
   display: flex;
@@ -526,14 +513,14 @@ section {
     justify-content: center;
   }
 
-  /* .flip-box {
+  .flip-box {
     height: 30vh;
     width: 80%;
   }
 
   .flip-box-front h3 {
     text-align: center;
-  } */
+  }
 
   #clients {
     margin-top: 5rem;

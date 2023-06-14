@@ -1,9 +1,6 @@
 <?php
 $receiving_email_address = 'ventas@sistemabot.com';
 
-'soporte@sistemabot.com';
-
-
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
